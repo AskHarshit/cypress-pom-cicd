@@ -1,0 +1,15 @@
+{
+  "name": "pom-cypress",
+  "version": "1.0.0",
+  "description": "implementing pom in cypress automation",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cypress:open": "cypress open"
+  },
+  "author": "harshit bhardwaj",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^12.3.0"
+  }
+}
