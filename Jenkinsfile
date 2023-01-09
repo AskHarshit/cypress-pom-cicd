@@ -44,7 +44,7 @@ pipeline {
             allowMissing: false, 
             alwaysLinkToLastBuild: false, 
             includes: '**/*.png',
-            keepAll: true,
+            keepAll: false,
             // keepAll: false, 
             reportDir: 'report/', 
             reportFiles: 'index.html', 
