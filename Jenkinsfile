@@ -40,14 +40,17 @@ pipeline {
 
     post {
         always {
-            publishHTML([allowMissing: false, 
+            publishHTML([
+            allowMissing: false, 
             alwaysLinkToLastBuild: false, 
-            keepAll: false, 
+            includes: '**/*.png',
+            keepAll: true,
+            // keepAll: false, 
             reportDir: 'report/', 
             reportFiles: 'index.html', 
             reportName: 'HTML Report', 
             reportTitles: '', 
-            useWrapperFileDirectly: true])
+            useWrapperFileDirectly: false])
         }
     }
 }
