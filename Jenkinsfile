@@ -42,7 +42,7 @@ pipeline {
         always {
             publishHTML([
             allowMissing: false, 
-            alwaysLinkToLastBuild: false, 
+            alwaysLinkToLastBuild: true, 
             includes: '**/*.png',
             keepAll: false, 
             reportDir: 'cypress/report/', 
