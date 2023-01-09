@@ -46,7 +46,7 @@ pipeline {
             includes: '**/*.png',
             keepAll: false,
             // keepAll: false, 
-            reportDir: 'report/', 
+            reportDir: 'cypress/report/', 
             reportFiles: 'index.html', 
             reportName: 'HTML Report', 
             reportTitles: '', 
