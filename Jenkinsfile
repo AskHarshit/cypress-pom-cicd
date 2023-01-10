@@ -3,8 +3,8 @@ pipeline {
     agent any
     
     parameters {
-        string(name: 'SPEC', defaultValue: 'cypress/e2e/saucedemo/**', description: 'Enter the script path that you want to execute')
-        choice(name: 'BROWSER', choices: ['chrome', 'edge'], description: 'Pick the web browser you want to use to run your scripts')
+        string(name: 'SPEC', defaultValue: 'cypress/e2e/automationdemo/**', description: 'Enter the script path that you want to execute')
+        choice(name: 'BROWSER', choices: ['chrome', 'edge', 'firefox'], description: 'Pick the web browser you want to use to run your scripts')
     }
     
     
