@@ -11,7 +11,7 @@ import checkoutcomplete from '../../pages/saucedemo/checkoutcomplete'
 
 describe('POM Implementation', () => {
     
-    beforeEach(() => {
+    before(() => {
         cy.visit('https://www.saucedemo.com/')  
         loginpage.typeUsername(logintestdata.username[0])
         loginpage.typePassword(logintestdata.password)

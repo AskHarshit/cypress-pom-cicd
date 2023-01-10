@@ -4,6 +4,10 @@ class loginpage{
         usernameInput: () => cy.get('#user-name'),
         passwordInput: () => cy.get('#password'),
         loginBtn: () => cy.get('#login-button'),
+        lockedoutusermessage: () =>  cy.get("h3[data-test='error']"),
+        
+
+
     }
 
     typeUsername(username){

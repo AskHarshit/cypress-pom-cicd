@@ -5,6 +5,7 @@ class checkoutStepOne{
         lastname: ()=> cy.get("#last-name"),
         pincode: ()=> cy.get("#postal-code"),
         continuebtn: ()=> cy.get("#continue"),
+        errorMessage: ()=> cy.get("h3[data-test='error']"),
 
 
     }
@@ -24,6 +25,8 @@ class checkoutStepOne{
     clickContinuebtn(continuebtn){
         this.elements.continuebtn().click()
     }
+
+
 }
 
 module.exports = new checkoutStepOne();
