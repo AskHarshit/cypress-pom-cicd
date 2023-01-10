@@ -13,7 +13,7 @@ describe('POM Implementation', () => {
     
     beforeEach(() => {
         cy.visit('https://www.saucedemo.com/')  
-        loginpage.typeUsername(logintestdata.username[2])
+        loginpage.typeUsername(logintestdata.username[0])
         loginpage.typePassword(logintestdata.password)
         loginpage.clickLogin()
         cy.url().should('include', '/inventory.html')

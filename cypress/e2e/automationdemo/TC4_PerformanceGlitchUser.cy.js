@@ -13,7 +13,7 @@ describe('POM Implementation', () => {
     
     before(() => {
         cy.visit('https://www.saucedemo.com/')  
-        loginpage.typeUsername(logintestdata.username[2])
+        loginpage.typeUsername(logintestdata.username[3])
         loginpage.typePassword(logintestdata.password)
         loginpage.clickLogin()
         cy.url().should('include', '/inventory.html')
@@ -33,6 +33,7 @@ describe('POM Implementation', () => {
             checkoutsteponepage.fillLastName('Bhardwaj')
             checkoutsteponepage.fillPincode('201303')
             checkoutsteponepage.clickContinuebtn()
+            // cy.wait(5000)
             cy.url().should('include', '/checkout-step-two.html')
             checkoutsteptwopage.elements.title().should('have.text', 'Checkout: Overview')
             checkoutsteptwopage.elements.cartquantity().should('have.text', '1')
