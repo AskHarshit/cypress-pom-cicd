@@ -6,10 +6,12 @@ import loginpage from '../../pages/saucedemo/loginpage'
 
 describe('POM Implementation', () => {
     
-    beforeEach(() => {
+    before(() => {
         cy.visit('https://www.saucedemo.com/')  
 
-        it('Locaked-Out User Validation', ()=>{
+    })
+
+        it('Locked-Out User Validation', ()=>{
             loginpage.typeUsername(logintestdata.username[1])
             loginpage.typePassword(logintestdata.password)
             loginpage.clickLogin()
@@ -17,6 +19,6 @@ describe('POM Implementation', () => {
             
         })
         
+
     })
 
-})
