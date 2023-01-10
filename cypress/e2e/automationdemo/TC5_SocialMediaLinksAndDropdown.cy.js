@@ -31,6 +31,8 @@ describe('POM Implementation', () => {
 
     it('validating dropdown', ()=>{
 
+        inventoryPage.elements.dropdown().as('dropdown').select('Price (low to high)')
+        cy.get('@dropdown').should('have.value', 'lohi')
         inventoryPage.elements.priceofproduct1().should('have.text', '$7.99')
         inventoryPage.elements.priceofproduct2().should('have.text', '$9.99')
         inventoryPage.elements.priceofproduct3().should('have.text', '$15.99')

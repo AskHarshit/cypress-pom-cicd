@@ -16,11 +16,7 @@ class inventoryPage {
         footertext: () => cy.get(".footer_copy"),
       
     }
-
-    selectDropdown(){
-            this.elements.dropdown().select()
-    }
-
+    
     clickOnesieAddToCart(){
         this.elements.onesieAddToCart().click()
     }
